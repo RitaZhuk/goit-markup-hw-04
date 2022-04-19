@@ -169,11 +169,19 @@ margin-left: 50px;
 
 /* -----------------MAIN------------------- */
 
-.main-section {
+  .main-section {
   background-color: var(--background);
-text-align: center;
-padding: 200px 0px 200px 0px;
-}
+  text-align: center;
+  padding: 200px 0px 200px 0px;
+  background-image:linear-gradient(
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)
+  ),
+  url(../images/hero-bg.jpg);
+  background-repeat: no-repeat;
+  max-width: 1600px;
+  margin: 0 auto;
+  }
 
 
 .main-title-text {
@@ -329,6 +337,38 @@ padding: 200px 0px 200px 0px;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-text);
+  margin-bottom: 30px;
+}
+
+.team-group-list {
+  display: flex;
+  justify-content: center;
+}
+
+.team-group-item + .team-group-item {
+  margin-left: 10px;
+}
+
+.team-group-link {
+  width: 44px;
+  height: 44px;
+  background-color: var(--white);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.team-group-link:hover {
+  background-color: var(--accent);
+}
+
+.team-group-link:hover .team-group-icon {
+  fill: var(--white);
+}
+
+.team-group-icon {
+  fill: #AFB1B8;
 }
 
 /* -----------FOOTER----------- */
@@ -338,6 +378,8 @@ padding: 200px 0px 200px 0px;
   padding-top: 60px;
   padding-bottom: 60px;
 }
+
+
 
 .contacts-web {
   font-family: "Raleway";
@@ -398,6 +440,54 @@ padding: 200px 0px 200px 0px;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
+
+.contacts-soc-title {
+  font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: var(--white);
+
+}
+
+
+
+.contacts-soc {
+  margin-left: 70px;
+ 
+}
+
+.contacts-soc-list {
+  display: flex;
+  justify-content: center;
+}
+
+.contacts-soc-item + .contacts-soc-item {
+  margin-left: 10px;
+}
+
+.contacts-soc-link {
+  width: 44px;
+  height: 44px;
+  background-color: var(--white);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contacts-soc-link:hover {
+  background-color: var(--accent);
+}
+
+.contacts-soc-link:hover .contacts-soc-icon {
+  fill: var(--white);
+}
+
+.contacts-soc-icon {
+  fill: #AFB1B8;
+}
+
 /* ----стили для portfolio.html------ */
 
 .btn-filtr {
