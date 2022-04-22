@@ -62,7 +62,7 @@ img {
 .site {
   padding-top: 25px;
   padding-bottom: 25px;
-  border-bottom: 1px #ECECEC;
+  border-bottom: 1px solid #ECECEC;
 }
 
 .nav-studio {
@@ -634,6 +634,7 @@ margin-bottom: 20px;
   background: #F5F4FA;
   border-radius: 4px;
   border: none;
+  padding: 6px 22px;
   }
 
  .btn-filtr:hover,
