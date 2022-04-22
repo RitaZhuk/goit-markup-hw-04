@@ -62,7 +62,7 @@ img {
 .site {
   padding-top: 25px;
   padding-bottom: 25px;
- border-bottom: 1px #ECECEC;
+  border-bottom: 1px #ECECEC;
 }
 
 .nav-studio {
@@ -393,7 +393,7 @@ margin-left: 50px;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-text);
-  margin-bottom: 30px;
+  margin-bottom: 16px;
 }
 
 .team-group-list {
@@ -447,9 +447,14 @@ margin-bottom: 50px;
   justify-content: center;
 }
 
-.clients-item {
+.clients-link {
+  width: 170px;
+  height: 92px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: 1px solid #AFB1B8;
-}
+  }
 
 .clients-link:hover {
   border: 1px solid var(--accent);
@@ -459,26 +464,17 @@ margin-bottom: 50px;
   border: 1px solid var(--accent);
 }
 
+.clients-link:focus .clients-img {
+    fill: var(--accent);
+  }
+
+.clients-link:hover .clients-img {
+    fill: var(--accent);
+  }
+
 .clients-item + .clients-item {
   margin-left: 30px;
 }
-
-.clients-link {
-  width: 170px;
-  height: 92px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  }
-
-  .clients-link:hover .clients-img {
-    fill: var(--accent);
-  }
-
-  .clients-link:focus .clients-img {
-    fill: var(--accent);
-  }
-
   .clients-img {
     fill: #AFB1B8;
   }
@@ -622,26 +618,30 @@ margin-bottom: 20px;
   cursor: pointer;
 }
 /* --------main-portfolio */
-.btn-filtr:hover,
-.btn-filtr:focus {
-  background-color: #2196f3;
-  color: var(--white);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-}
+
 
 .filtr {
   margin-bottom: 34px;
   display: flex;
   justify-content: center;
+ 
  }
 
-.btn-filtr {
+ .btn-filtr {
   display: inline-block;
   text-align: center;
   align-items: center;
   background: #F5F4FA;
   border-radius: 4px;
+  border: none;
   }
+
+ .btn-filtr:hover,
+.btn-filtr:focus {
+  background-color: #2196f3;
+  color: var(--white);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
 
   .filtr-item:not(:last-child) {
     margin-right: 8px;
